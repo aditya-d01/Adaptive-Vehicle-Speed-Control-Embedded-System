@@ -1,0 +1,147 @@
+📘 Adaptive Vehicle Speed Control System – Documentation
+1. Introduction
+With the rapid increase in vehicles on roads, maintaining speed limits in restricted zones such as schools, hospitals, and residential areas has become a major challenge. Manual speed control often leads to accidents due to negligence and human error.
+This project aims to develop an Adaptive Vehicle Speed Control System using ESP32 that automatically regulates vehicle speed based on zone detection and real-time monitoring, thereby improving road safety.
+
+2. Objective of the Project
+The main objectives of this project are:
+To detect restricted zones using sensors
+To monitor vehicle speed in real time
+To automatically limit vehicle speed
+To alert the driver when overspeeding occurs
+To reduce accidents caused by human negligence
+
+3. Problem Statement
+In many accident-prone and restricted areas, drivers fail to follow speed limits due to lack of awareness or negligence. Traditional speed control methods depend entirely on manual control, which is unreliable.
+There is a need for an automated system that can:
+Detect zones automatically
+Control speed without driver intervention
+Provide real-time feedback
+
+4. Proposed System
+The proposed system uses sensor-based zone detection and speed monitoring to regulate vehicle speed automatically.
+
+Key Features:
+Automatic zone detection using IR sensors
+Real-time speed calculation using Hall effect sensor
+PWM-based motor control using ESP32
+Visual and audio alerts
+Embedded system-based implementation
+When the vehicle enters a restricted zone, the system reduces speed automatically and alerts the driver.
+
+5. System Architecture
+The system consists of the following major blocks:
+Sensor Unit
+ESP32 Control Unit
+Motor Control Unit
+Display Unit
+Alert System
+Block Diagram Description:
+IR sensors detect restricted zones
+Hall sensor measures speed
+ESP32 processes sensor inputs
+PWM controls motor speed
+LCD displays system status
+Buzzer generates warning alerts
+
+6. Hardware Components
+Component	Description
+ESP32	Main controller with Wi-Fi and Bluetooth
+IR Sensor	Zone detection
+Hall Effect Sensor	Speed measurement
+L298N Motor Driver	Motor control
+DC Motor	Vehicle simulation
+LCD Display	Information display
+Buzzer	Warning alert
+Battery	Power supply
+
+7. Software Tools
+The following software tools were used:
+Arduino IDE
+ESP32 Board Package
+Embedded C / Arduino Programming
+Serial Monitor for Debugging
+
+8. Working Principle
+When the system is powered ON, ESP32 initializes all connected sensors and modules.
+IR sensors continuously monitor for restricted zones.
+Hall effect sensor measures wheel rotation speed.
+ESP32 calculates vehicle speed from sensor data.
+If the speed exceeds the predefined limit:
+Buzzer is activated
+Motor speed is reduced using PWM
+LCD displays zone and speed information.
+The system continuously repeats this process.
+
+9. Flowchart
+Start system
+Initialize ESP32 and peripherals
+Read sensor values
+Detect restricted zone
+Measure vehicle speed
+Compare speed with limit
+Apply PWM control
+Display output
+Repeat process
+
+10. Results and Discussion
+The developed prototype successfully demonstrated automatic speed control in restricted zones.
+
+Observations:
+Speed reduction was smooth and stable
+Alerts were generated accurately
+System response was fast
+Driver dependency was reduced
+Power consumption was efficient
+The system proved effective in improving safety in controlled environments.
+
+11. Applications
+This system can be used in:
+School zones
+Hospital areas
+Residential streets
+Accident-prone locations
+Smart transportation systems
+Autonomous vehicle research
+IoT-based traffic monitoring
+
+12. Advantages
+Improves road safety
+Reduces human error
+Low-cost implementation
+Automatic operation
+Easy to maintain
+Scalable using IoT features
+
+13. Limitations
+Limited sensor range
+Prototype-level implementation
+Environmental interference
+Not tested on real vehicles
+Depends on proper sensor placement
+
+14. Future Scope
+
+Future improvements can include:
+GPS-based zone identification
+Cloud-based data storage
+Mobile application monitoring
+AI-based traffic prediction
+Vehicle-to-Infrastructure (V2I) communication
+Real-time map integration
+
+15. Conclusion
+This project successfully implemented an Adaptive Vehicle Speed Control System using ESP32. The system automatically regulates vehicle speed based on zone detection and real-time monitoring.
+It demonstrates how embedded systems and automation can significantly improve road safety and reduce accidents.
+
+16. Contributors
+Sakshi More
+Sejal Jadhav
+Sanket Kammar
+Aditya Donk
+
+Department of Electronics and Communication Engineering
+KLE Technological University, Belagavi
+
+17. License
+This project is developed for academic and educational purposes only.
